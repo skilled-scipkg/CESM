@@ -1,0 +1,94 @@
+{
+  "compiled_package_id": "cesm",
+  "evidence": {
+    "core_skills": [
+      "cesm-getting-started",
+      "cesm-inputs-and-modeling",
+      "cesm-readme"
+    ],
+    "evidence_dir": "skills/.evidence",
+    "files": [
+      "skills/.evidence/cesm-getting-started.md",
+      "skills/.evidence/cesm-inputs-and-modeling.md",
+      "skills/.evidence/cesm-readme.md"
+    ]
+  },
+  "generation": {
+    "docs_only": false,
+    "generator_script": "sci-skills-generator/scripts/generate_skills_folder.py",
+    "max_skills": 30,
+    "return_code": 0,
+    "status": "ok"
+  },
+  "passes": [
+    {
+      "pass": 1,
+      "return_code": 0,
+      "status": "ok"
+    },
+    {
+      "pass": 2,
+      "return_code": 0,
+      "status": "ok"
+    },
+    {
+      "pass": 3,
+      "return_code": 0,
+      "status": "ok"
+    }
+  ],
+  "profile": {
+    "docs_dirs": [
+      "doc"
+    ],
+    "docs_only": false,
+    "notes": [
+      "CESM is a meta-repository; many source trees are populated via ./bin/git-fleximod update.",
+      "No standalone tutorials/examples directory was found; quickstart/tutorial material lives under doc/source."
+    ],
+    "package_name": "cesm",
+    "profile_path": "skills/.compile_profile.json",
+    "profile_source": "file",
+    "source_dirs": [
+      "bin",
+      "cime",
+      "components",
+      "libraries",
+      "share",
+      "tools"
+    ],
+    "test_dirs": [
+      "cime_config/SystemTests",
+      "cime_config/testfiles",
+      "cime_config/testmods_dirs",
+      "tools/statistical_ensemble_test"
+    ],
+    "tutorial_dirs": [
+      "doc/source"
+    ],
+    "warnings": []
+  },
+  "project_root": "/mnt/home/taoeli/fermilink_repos/.fermilink-auto-compile/cesm-cesm",
+  "validation": {
+    "core_skills_checked": [
+      "cesm-getting-started",
+      "cesm-inputs-and-modeling",
+      "cesm-readme"
+    ],
+    "docs_only": false,
+    "errors": [
+      "/mnt/home/taoeli/fermilink_repos/.fermilink-auto-compile/cesm-cesm/skills/cesm-getting-started/references/source_map.md: broken path references: cime/scripts/query_config, cime/scripts/create_newcase, cime/scripts/create_clone",
+      "/mnt/home/taoeli/fermilink_repos/.fermilink-auto-compile/cesm-cesm/skills/cesm-inputs-and-modeling/references/source_map.md: broken path references: cime/scripts/create_newcase, cime/scripts/query_config, cime/scripts/create_clone",
+      "/mnt/home/taoeli/fermilink_repos/.fermilink-auto-compile/cesm-cesm/skills/cesm-getting-started/SKILL.md: playbook missing required element containing 'triage questions'.",
+      "/mnt/home/taoeli/fermilink_repos/.fermilink-auto-compile/cesm-cesm/skills/cesm-readme/SKILL.md: playbook missing required element containing 'triage questions'."
+    ],
+    "index_skills": [
+      "cesm-index"
+    ],
+    "ok": false,
+    "skills_total": 4,
+    "source_links_total": 24,
+    "topic_skills": 3,
+    "warnings": []
+  }
+}

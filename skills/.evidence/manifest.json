@@ -1,0 +1,13 @@
+{
+  "core_skills": [
+    "cesm-getting-started",
+    "cesm-inputs-and-modeling",
+    "cesm-readme"
+  ],
+  "evidence_dir": "skills/.evidence",
+  "files": [
+    "skills/.evidence/cesm-getting-started.md",
+    "skills/.evidence/cesm-inputs-and-modeling.md",
+    "skills/.evidence/cesm-readme.md"
+  ]
+}
